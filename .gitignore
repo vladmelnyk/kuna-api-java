@@ -21,6 +21,7 @@ out
 gen
 .gitignore
 
+/src/main/java/io/kuna/Main.java
 src/main/resources/
 src/test/
 
