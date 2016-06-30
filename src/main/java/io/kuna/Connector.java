@@ -9,6 +9,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.Map;
 
 class Connector {
+
     private static final String TARGET_HOST = "https://kuna.io";
     private static final String BASE_PATH = "api/v2";
     static final String TICKER_PATH = "tickers/btcuah";

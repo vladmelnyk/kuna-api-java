@@ -2,7 +2,9 @@ package io.kuna.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@SuppressWarnings(value = "unused")
 class Order {
+
     private Long id;
     private String side;
     @JsonProperty("ord_type")

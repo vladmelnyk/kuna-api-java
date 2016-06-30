@@ -2,6 +2,7 @@ package io.kuna.model;
 
 import java.util.ArrayList;
 
+@SuppressWarnings(value = "unused")
 public class TradesHistory extends ArrayList<Trade> {
 
     @Override

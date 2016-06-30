@@ -4,7 +4,7 @@ import io.kuna.model.OrderBook;
 import io.kuna.model.Ticker;
 import io.kuna.model.TradesHistory;
 
-class KunaClient extends Connector{
+class KunaClient extends Connector {
 
     Integer getTimestamp() {
         return (Integer) invokePublicApi(TIMESTAMP_PATH, Integer.class);
@@ -15,7 +15,7 @@ class KunaClient extends Connector{
     }
 
     OrderBook getOrderBook() {
-        return (OrderBook)invokePublicApi(ORDERBOOK_PATH, BTCUAH_PARAMETERS, OrderBook.class);
+        return (OrderBook) invokePublicApi(ORDERBOOK_PATH, BTCUAH_PARAMETERS, OrderBook.class);
     }
 
     TradesHistory getTradesHistory() {

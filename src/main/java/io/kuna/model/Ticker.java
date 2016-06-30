@@ -1,6 +1,6 @@
 package io.kuna.model;
 
-
+@SuppressWarnings(value = "unused")
 public class Ticker {
 
     private Long at;

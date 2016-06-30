@@ -2,7 +2,9 @@ package io.kuna.model;
 
 import java.util.List;
 
+@SuppressWarnings(value = "unused")
 public class OrderBook {
+
     private List<Order> asks;
     private List<Order> bids;
 

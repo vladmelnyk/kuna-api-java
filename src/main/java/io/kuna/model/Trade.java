@@ -2,7 +2,9 @@ package io.kuna.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@SuppressWarnings(value = "unused")
 class Trade {
+
     private Integer id;
     private Double price;
     private Double volume;
