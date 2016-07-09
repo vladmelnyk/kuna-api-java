@@ -14,6 +14,8 @@ class Trade {
     @JsonProperty("created_at")
     private Object createdAt;
     private Object side;
+    @JsonProperty("order_id")
+    private Integer orderId;
 
     public Integer getId() {
         return id;
@@ -71,6 +73,14 @@ class Trade {
         this.side = side;
     }
 
+    public Integer getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
+    }
+
     @Override
     public String toString() {
         return "{" +
@@ -81,6 +91,7 @@ class Trade {
                 ", market='" + market + '\'' +
                 ", createdAt=" + createdAt +
                 ", side=" + side +
+                ", orderId=" + orderId +
                 '}';
     }
 }

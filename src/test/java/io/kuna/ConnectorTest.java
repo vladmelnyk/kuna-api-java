@@ -11,15 +11,15 @@ public class ConnectorTest {
 
     @Test(expected=NullPointerException.class)
     public void invokePublicApiTest_WithNoPath(){
-        connector.invokePublicApi(null, Mockito.any().getClass());
+        connector.sendGetRequest(null, Mockito.any().getClass());
     }
     @Test(expected=IllegalArgumentException.class)
     public void invokePublicApiTest_WithNoClass(){
-        connector.invokePublicApi(Connector.ORDERBOOK_PATH, null);
+        connector.sendGetRequest(Connector.ORDERBOOK_PATH, null);
     }
     @Test(expected = BadRequestException.class)
     public void invokePublicApiTest_WithoutMapOfParameters(){
-        connector.invokePublicApi(Connector.TRADES_PATH, null, TradesHistory.class);
+        connector.sendGetRequest(Connector.TRADES_PATH, null, TradesHistory.class);
     }
 
 }
